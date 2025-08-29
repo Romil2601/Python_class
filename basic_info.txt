@@ -1,0 +1,67 @@
+function - to perform specific task
+
+Two types of functions:-
+
+1. user defined  - we will create
+2. in built - python
+
+print()
+input()
+format()
+upper()
+lower()
+startswith()
+extend()
+
+
+functions - name , parameter ,return type
+
+name - print
+paramter - 
+return - output
+
+parameter for print:
+    print(sep,end)
+
+sep = seperator
+end = endswith
+
+Comments  ---> Non exevcutable part of program for documentation purpose
+	
+Input  --> to accept input from user and it always return string. So type conversion is needed for the different
+           type of data.
+
+Data type --> which kind of data is there it is specified by data type.
+Variable --> it stores the value.
+
+Example :-  c_no = 7775958 , name = "romil"
+
+Data-Types -  
+			1. Numeric - int, float, complex
+			2. Sequence - str, list, tuple, range
+			3. Map - dic
+			4. Set - set 
+			5. Boolean - bool 
+
+Escape Sequence :
+					\n	New line	                                 print("Hello\nWorld")	      Hello 
+															                                      World
+					\t	Tab space	                                 print("Hello\tWorld")	      Hello  World
+					\\	Backslash	                                 print("C:\\Users\\Romil")    C:\Users\Romil
+					\'	Single quote	                             print('It\'s fine')	      It's fine
+					\"	Double quote	                             print("He said \"Hello\"")   He said "Hello"
+					\r	Carriage return (moves cursor to beginning)	 print("Hello\rHi")	          Hi
+					\b	Backspace	                                 print("Helloo\b")	          Hello
+					\f	Form feed (new page, rarely used)	         print("Hello\fWorld")        Hello
+                                                                                                  World
+
+Programming style:
+
+					Block - identation
+					Naming convenstion
+
+Reserve Work / Predefiened Word - Keyword
+
+Memory Management - Heap, Stack
+
+Type Conversion - convert 1 to another data type.
