@@ -1,0 +1,8 @@
+num1 = int(input("Enter first number: "))
+print(f"{num1} += 10 is {num1 + 10}")
+print(f"{num1} -= 5 is {num1 - 5}")
+print(f"{num1} *= 2 is {num1 * 2}")
+print(f"{num1} /= 3 is {num1 / 3}")
+print(f"{num1} %= 4 is {num1 % 4}")
+print(f"{num1} //= 2 is {num1 // 2}")
+print(f"{num1} **= 3 is {num1 ** 3}")

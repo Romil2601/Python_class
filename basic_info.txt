@@ -65,3 +65,15 @@ Reserve Work / Predefiened Word - Keyword
 Memory Management - Heap, Stack
 
 Type Conversion - convert 1 to another data type.
+
+Format Function - .format , f
+					print ("The addition of {} and {} is {}" .format(num1,num2,num1+num2))
+					print (f"The addition of {num1} and {num2} is {num1+num2}")
+
+Operators - 1. Arithmatic : Calculations ( +, - , * , / , % , // , **)
+			2. Logical    : 
+			3. Assignment : Assign Values ( = , += , -= , *= , /= , %= , //= , **=)
+			4. Identity
+			5. Membership
+			6. Relational
+			7. Comparision : Compare Values ( == , != , > , < , >= , <=)
