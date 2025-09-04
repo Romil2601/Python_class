@@ -71,9 +71,12 @@ Format Function - .format , f
 					print (f"The addition of {num1} and {num2} is {num1+num2}")
 
 Operators - 1. Arithmatic : Calculations ( +, - , * , / , % , // , **)
-			2. Logical    : 
+			2. Logical    : Compound ( AND , OR , NOT)
 			3. Assignment : Assign Values ( = , += , -= , *= , /= , %= , //= , **=)
-			4. Identity
-			5. Membership
-			6. Relational
-			7. Comparision : Compare Values ( == , != , > , < , >= , <=)
+			4. Identity   : Checks if the values and type are the same ( IS , IS NOT)
+			5. Membership : Presence of a value within a sequence ( IN , NOT IN)
+			6. Comparision: Compare Values ( == , != , > , < , >= , <=)
+
+Conditional Statements -  1. if
+						  2. if-else
+						  3. if-elif-else

@@ -46,5 +46,5 @@
 # print("Romil Raja",end="\n")
 # print("Romil Raja",end="\t")
 
-a = input("Enter value: ")
-print(f"{a} * 10 is {a * 10}")
+# a = input("Enter value: ")
+# print(f"{a} * 10 is {a * 3}")
