@@ -79,4 +79,16 @@ Operators - 1. Arithmatic : Calculations ( +, - , * , / , % , // , **)
 
 Conditional Statements -  1. if
 						  2. if-else
-						  3. if-elif-else
+						  3. if-elif-else - mostly used for switch/match case.
+						  4. Nested if-else - condition within the condition.
+
+Match Case - mostly used for multiple choice statement.
+
+Loops (iteration/repeatation) :  1. For-Loop - when you know the number of loops.
+								 2. While-Loop - when you don't know the number of loops.
+
+Control statements within loops:
+								 1. break: Terminates the loop entirely.
+								 2. continue: Skips the current iteration and proceeds to the next one.
+								 3. else (with loops): Executes a block of code after the loop completes 
+									                      normally (without encountering a break statement).

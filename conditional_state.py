@@ -53,3 +53,16 @@ elif num1 < num2:
     print(f"{num1} is less than {num2}")
 else:
     print(f"{num1} is equal to {num2}")
+
+# nested if-else statement - an if-else statement inside another if or else block
+num = int(input("Enter a number: "))
+if num > 0:
+    print(f"{num} is a positive number")
+    if num % 2 == 0:
+        print(f"{num} is an even number")
+    else:
+        print(f"{num} is an odd number")
+elif num == 0:
+    print(f"{num} is zero")
+else:
+    print(f"{num} is a negative number")
