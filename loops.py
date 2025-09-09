@@ -56,13 +56,13 @@
 
 
 # Sum of digits of a number
-# lst_num = {1, 2, 3, 4, 5}
-# sum = 0
-# for i in lst_num:
-#     sum += i
-# print(f"The sum of digits is {sum}")
+lst_num = [1, 2, 3, 4, 5]
+sum = 0
+for i in lst_num:
+    sum += i
+print(f"The sum of digits is {sum}")
 
-#while loop
+#while loop+
 # j = 10 
 # while j >= 1:
 #     print(f"Iteration {j}")
