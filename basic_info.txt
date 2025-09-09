@@ -85,7 +85,13 @@ Conditional Statements -  1. if
 Match Case - mostly used for multiple choice statement.
 
 Loops (iteration/repeatation) :  1. For-Loop - when you know the number of loops.
+											       for (initialization; condition; increment/decrement) {
+        													// Code to be executed
+    											    }
 								 2. While-Loop - when you don't know the number of loops.
+								 				     while (condition) {
+        													// Code to be executed
+    												 }
 
 Control statements within loops:
 								 1. break: Terminates the loop entirely.
