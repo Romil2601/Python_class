@@ -56,11 +56,11 @@
 
 
 # Sum of digits of a number
-lst_num = [1, 2, 3, 4, 5]
-sum = 0
-for i in lst_num:
-    sum += i
-print(f"The sum of digits is {sum}")
+# lst_num = [1, 2, 3, 4, 5]
+# sum = 0
+# for i in lst_num:
+#     sum += i
+# print(f"The sum of digits is {sum}")
 
 #while loop+
 # j = 10 
@@ -99,6 +99,37 @@ print(f"The sum of digits is {sum}")
 #     else:
 #         print(f"{num} is a prime number")
 
+# Print Prime Numbers from 1 to 100 using while loop
+# num = 1
+# while num <= 100:
+#     i = 2
+#     while i < num:
+#         if num % i == 0:
+#             break
+#         i += 1
+#     else:
+#         print(f"{num} is a prime number")
+#     num += 1
+
+# Find the prime number given by the user using for loop
+# num = int(input("Enter no "))
+# temp = 1
+# for i in range(2,num):
+#     if num%i==0:
+#         print(f"{num} is not prime number")
+#         temp=1
+#         break
+#     else:
+#         print(f"{num} is prime number")
+#         temp=0
+
+# if temp==1:
+#     print(f"{num} is not prime number")
+# else:
+#     print(f"{num} is prime number")
+
+
+
 # Find Number of Digits in a Number
 # count = 0
 # num = int(input("Enter a number: "))
@@ -108,3 +139,17 @@ print(f"The sum of digits is {sum}")
 #     print(f"Remainder is {rem} and number is {num}")
 #     count += 1
 # print(f"Number of digits is {count}")
+
+# Sum of the numbers in a specific range with a increment of 3
+# sum = 0
+# for x in range(2,21,3):
+#     print(x)
+#     sum += x
+# print(f"The sum is {sum}")
+
+# Sum of the numbers in a specific range with a decrement of 2
+# sum = 0
+# for x in range(20, 1, -2):
+#     print(x)
+#     sum += x
+# print(f"The sum is {sum}")
