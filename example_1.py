@@ -48,3 +48,18 @@
 
 # a = input("Enter value: ")
 # print(f"{a} * 10 is {a * 3}")
+
+
+# Swap two numbers without using third variable
+# num1 = 12 
+# num2 = 22
+# num1 , num2 = num2 , num1
+# print(f"num1 is {num1} and num2 is {num2}")
+
+# Swap two numbers using third variable
+# num1 = 12 
+# num2 = 22
+# temp = num1
+# num1 = num2
+# num2 = temp
+# print(f"num1 is {num1} and num2 is {num2}")

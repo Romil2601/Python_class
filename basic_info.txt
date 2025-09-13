@@ -93,6 +93,12 @@ Loops (iteration/repeatation) :  1. For-Loop - when you know the number of loops
         													// Code to be executed
     												 }
 
+Examples in Loop :  1. Armstrong number
+					2. Fibonacci Series
+					3. Prime Number
+					4. Pattern
+					5. Multiplication Tables
+
 Control statements within loops:
 								 1. break: Terminates the loop entirely.
 								 2. continue: Skips the current iteration and proceeds to the next one.

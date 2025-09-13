@@ -153,3 +153,62 @@
 #     print(x)
 #     sum += x
 # print(f"The sum is {sum}")
+
+# Armstrong Number
+# num = int(input("Enter a number: "))
+# sum = 0
+# temp = num
+# while temp != 0:
+#     digit = temp % 10
+#     sum += digit ** 3
+#     temp //= 10
+# if num == sum:
+#     print(f"{num} is an Armstrong number")
+# else:
+#     print(f"{num} is not an Armstrong number")
+
+
+# Fibonacci Series
+# num = int(input("Enter the number of series: "))
+# prev = 0
+# next = 1
+# for i in range(num):
+#     print(prev)
+#     sum = prev + next
+#     prev = next
+#     next = sum
+
+
+# Fibonacci Series using while loop
+# num = int(input("Enter the number of series: "))
+# prev = 0
+# next = 1
+# i = 0
+# while i < num:
+#     print(prev)
+#     sum = prev + next
+#     prev = next
+#     next = sum
+#     i += 1
+
+# Pattern Printing
+# rows = int(input("Enter number of rows: "))
+# for i in range(1, rows + 1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+
+# Reverse Pattern Printing
+# rows = int(input("Enter number of rows: "))
+# for i in range(rows, 0, -1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+# Pattern Printing in numbers
+# rows = int(input("Enter number of rows: "))
+# for i in range(1, rows + 1):
+#     for j in range(1, i + 1):
+#         print(j, end=" ")
+#     print()
