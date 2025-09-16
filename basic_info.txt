@@ -102,5 +102,5 @@ Examples in Loop :  1. Armstrong number
 Control statements within loops:
 								 1. break: Terminates the loop entirely.
 								 2. continue: Skips the current iteration and proceeds to the next one.
-								 3. else (with loops): Executes a block of code after the loop completes 
-									                      normally (without encountering a break statement).
+								 3. pass :  a null operation; it does nothing. Its primary purpose is to act 
+								            as a placeholder when a statement is syntactically required but no action is desired or needed.

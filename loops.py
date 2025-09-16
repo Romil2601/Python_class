@@ -1,5 +1,5 @@
-#Loops : 1. for loop -  used to iterate over a sequence (like a list, tuple, dictionary, set, or string).
-#        2. while loop - repeatedly executes a block of code as long as a specified condition remains true.
+# Loops : 1. for loop -  used to iterate over a sequence (like a list, tuple, dictionary, set, or string).
+#         2. while loop - repeatedly executes a block of code as long as a specified condition remains true.
 
 # for loop
 # for i in range(5):
@@ -212,3 +212,24 @@
 #     for j in range(1, i + 1):
 #         print(j, end=" ")
 #     print()
+
+# Number Pattern Printing as below : 1 , 3 , 5 , 7 ...
+# num = int(input("Enter number of rows: "))
+# count = 1
+# for i in range(1, num + 1):
+#     for j in range(1, i + 1):
+#         print(count, end=" ")
+#     print()
+#     count += 2
+
+# Loop with continue statement
+# for i in range(1, 11):
+#     if i == 5:
+#         continue
+#     print(i)
+
+# Loop with pass statement
+# for i in range(1, 11):
+#     if i == 5:
+#         pass
+#     print(i)
