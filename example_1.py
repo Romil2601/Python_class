@@ -63,3 +63,13 @@
 # num1 = num2
 # num2 = temp
 # print(f"num1 is {num1} and num2 is {num2}")
+
+month = input("Enter month: ")
+if month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "October" or month == "December":
+    print("31 Days")
+elif month == "April" or month == "June" or month == "September" or month == "November":
+    print("30 Days")
+elif month == "February":
+    print("28 Days")
+else:
+    print("Invalid month")
