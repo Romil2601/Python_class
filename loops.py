@@ -213,14 +213,23 @@
 #         print(j, end=" ")
 #     print()
 
-# Number Pattern Printing as below : 1 , 3 , 5 , 7 ...
-num = int(input("Enter number of rows: "))
-count = 1
-for i in range(1, num + 1):
-    for j in range(1, i + 1):
-        print(count, end=" ")
-    print()
-    count += 2
+# Number Pattern Printing in rows as below : 1 , 3 , 5 , 7 ...
+# num = int(input("Enter number of rows: "))
+# count = 1
+# for i in range(1, num + 1):
+#     for j in range(1, i + 1):
+#         print(count, end=" ")
+#     print()
+#     count += 2
+
+# Number Pattern Printing in both rows and column as below : 1 , 3 , 5 , 7 ...
+# num = int(input("Enter number of rows: "))
+# count = 1
+# for i in range(1, num + 1):
+#     for j in range(1, i + 1):
+#         print(count, end=" ")
+#         count += 2
+#     print()
 
 # Loop with continue statement
 # for i in range(1, 11):
