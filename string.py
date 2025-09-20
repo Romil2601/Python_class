@@ -96,3 +96,85 @@
 # print(str2.isdigit() , str2.isalpha() , str2.isalnum())
 # print(str3.isdigit() , str3.isalpha() , str3.isalnum())
 # print(str4.isdigit() , str4.isalpha() , str4.isalnum())
+
+# Write a python program to check whether the given email is valid or not.
+# 1.
+# email = input("Enter your email: ")
+# if "@" in email and "." in email:
+#     print(f"{email} is a Valid email")
+# else:
+#     print(f"{email} is an Invalid email")
+
+# 2. 
+# email = input("Enter your email: ")
+# if email.endswith(".com") or email.endswith(".in"):
+#     print(f"{email} is a Valid email")
+# else:
+#     print(f"{email} is an Invalid email")
+
+# String Indexing with positive index
+# str1 = "Tops Technologies"
+# print(str1[0])  # T
+# print(str1[1])  # o 
+# print(str1[2])  # p
+# print(str1[3])  # s
+# print(str1[4])  #  
+# print(str1[5])  # T
+# print(str1[6])  # e
+# print(str1[7])  # c
+# print(str1[8])  # h
+# print(str1[9])  # n
+# print(str1[10]) # o
+# print(str1[11]) # l
+# print(str1[12]) # o
+# print(str1[13]) # g
+# print(str1[14]) # i
+# print(str1[15]) # e
+# print(str1[16]) # s
+
+# String Indexing with negative index
+# str1 = "Romil Raja"
+# print(str1[-1])  # a
+# print(str1[-2])  # j
+# print(str1[-3])  # a
+# print(str1[-4])  # R
+# print(str1[-5])  # 
+# print(str1[-6])  # l
+# print(str1[-7])  # i
+# print(str1[-8])  # m
+# print(str1[-9])  # o
+# print(str1[-10]) # R
+
+# Accessing String through indexing with user input
+# str1 = input("Enter your name: ")
+# for i in range(len(str1)):
+#     print(f"Character at index {i} is {str1[i]}") 
+
+# Accessing String through negative indexing with user input
+str1 = input("Enter your name: ")
+for i in range(1, len(str1)+1):
+    print(f"Character at negative index {-i} is {str1[-i]}")
+
+# Check Vowels in a string
+# str1 = input("Enter your name: ")
+# vowels = 0
+# for i in range(len(str1)):
+#     if str1[i].lower() in 'aeiou':
+#         vowels += 1
+# print(f"Number of vowels in '{str1}' is {vowels}")
+
+# String Slicing
+# str1 = "Tops Technologies"
+# print(str1[0:4])   # Tops
+# print(str1[5:])    # Technologies
+# print(str1[:4])   # Tops
+# print(str1[:])    # Tops Technologies
+# print(str1[::2])  # Tp ehoois
+# print(str1[::3])  # Tsenoe
+# print(str1[1::2]) # osTcnlge
+
+# Example of String Slicing with user input
+# str1 = input("Enter your name: ")
+# length = len(str1)
+# for i in range(length):
+#     print(f"Sliced string from index 0 to {i+1} is '{str1[0:i+1]}'")

@@ -64,12 +64,19 @@
 # num2 = temp
 # print(f"num1 is {num1} and num2 is {num2}")
 
-month = input("Enter month: ")
-if month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "October" or month == "December":
-    print("31 Days")
-elif month == "April" or month == "June" or month == "September" or month == "November":
-    print("30 Days")
-elif month == "February":
-    print("28 Days")
-else:
-    print("Invalid month")
+# month = input("Enter month: ")
+# if month == "January" or month == "March" or month == "May" or month == "July" or month == "August" or month == "October" or month == "December":
+#     print("31 Days")
+# elif month == "April" or month == "June" or month == "September" or month == "November":
+#     print("30 Days")
+# elif month == "February":
+#     print("28 Days")
+# else:
+#     print("Invalid month")
+
+#  Write a python program to get factorial number of the given number
+# num = int(input("Enter a number: "))
+# factorial = 1
+# for i in range(1, num + 1):
+#     factorial *= i
+# print("Factorial of", num, "is", factorial)

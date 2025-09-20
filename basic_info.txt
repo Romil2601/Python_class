@@ -104,3 +104,9 @@ Control statements within loops:
 								 2. continue: Skips the current iteration and proceeds to the next one.
 								 3. pass :  a null operation; it does nothing. Its primary purpose is to act 
 								            as a placeholder when a statement is syntactically required but no action is desired or needed.
+
+String :  A string is a sequence of characters enclosed within single quotes (' ') or double quotes (" ").
+
+String Methods : 1. Access String
+				 2. String Slicing
+				 3. String Indexing
