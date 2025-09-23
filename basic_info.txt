@@ -110,3 +110,21 @@ String :  A string is a sequence of characters enclosed within single quotes (' 
 String Methods : 1. Access String
 				 2. String Slicing
 				 3. String Indexing
+
+Ternary Function (if-else) : provides a concise way to write an if-else statement on a single line. It evaluates 
+							 a condition and returns one of two values based on whether the condition is true or false.
+
+					Example ->  value_if_true if condition else value_if_false
+
+Simple Interest : a method of calculating the interest charged on a loan or earned on an investment based solely on the initial principal amount, 
+				  remaining constant over time. The formula to calculate it is SI = (P × R × T) / 100.
+
+Compound Interest : is calculated on the principal and also on the accumulated interest from previous periods, 
+					leading to exponential growth where interest earns interest.  Amount = P*(1+R / 100) ** T , CI = Amount - P.
+
+ASCII Value : a numerical representation for characters, with ASCII standing for American Standard Code for Information Interchange
+
+Fahrenheit to Celsius : ( Fahrenheit - 32) * 5/9
+Celsius to Fahrenheit : (Celsius * 5/9) + 32
+
+.get() : primarily associated with dictionaries and provides a safe way to retrieve values associated with a key.

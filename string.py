@@ -17,6 +17,7 @@
 # isalnum() method: It checks if all characters in the string are alphanumeric.
 # split() method: It splits the string into a list of substrings based on a specified delimiter.
 # join() method: It joins a list of strings into a single string with a specified delimiter
+# sorted() function: It returns a sorted list of characters from the string.
 
 # Example usage of string functions and methods
 # my_string = "  Hello, World! Welcome to Python programming.  "
@@ -151,9 +152,9 @@
 #     print(f"Character at index {i} is {str1[i]}") 
 
 # Accessing String through negative indexing with user input
-str1 = input("Enter your name: ")
-for i in range(1, len(str1)+1):
-    print(f"Character at negative index {-i} is {str1[-i]}")
+# str1 = input("Enter your name: ")
+# for i in range(1, len(str1)+1):
+#     print(f"Character at negative index {-i} is {str1[-i]}")
 
 # Check Vowels in a string
 # str1 = input("Enter your name: ")
@@ -178,3 +179,54 @@ for i in range(1, len(str1)+1):
 # length = len(str1)
 # for i in range(length):
 #     print(f"Sliced string from index 0 to {i+1} is '{str1[0:i+1]}'")
+
+# Print the last half string and other half
+# str1 = input("Enter your name: ")
+# length = len(str1)
+# half = length // 2
+# print(f"String: {str1[half:]}{str1[:half]}")
+#-----------------------------------------------
+# name = input("Enter your name: ")
+# print(f"String: {name[-(len(name)//2):]}{name[:-(len(name)//2)]}")
+
+# Print the string in which the first and last character is exchanged
+# str1 = input("Enter your name: ")
+# modified_str = str1[-1] + str1[1:-1] + str1[0] 
+# print(f"Modified string: {modified_str}")
+
+# Example for split method
+# str1 = "Tops Technologies"
+# words = str1.split() # if you want to split by space
+# words1 = str1.split('o') # if you want to split by 'o'
+# print(f"Original String: {str1}")
+# print(f"List of Words: {words}")
+# print(f"List of Words by 'o': {words1}")
+
+# Example for join method
+# words_list = ["Tops", "Technologies"]
+# joined_string = " ".join(words_list)
+# print(f"List of Words: {words_list}")
+# print(f"Joined String: {joined_string}")
+
+# Example of strip method
+# str1 = "   Tops Technologies   "
+# print(f"Original String: '{str1}'")
+# print(f"String after strip(): '{str1.strip()}'")
+
+# Example of sorted() function
+# str1 = "Tops Technologies"
+# print(f"Original String: '{str1}'")
+# print(f"Sorted Characters: {sorted(str1)}")
+# print(f"Joined Sorted String: '{' '.join(sorted(str1.split()))}'")
+
+# Example of sorted() function through length of string
+# str1 = input("Enter your name: ")
+# print(f"Original String: '{str1}'")
+# len_str = sorted(str1.split(), key=len)
+# print(f"Sorted Characters by length: {len_str}")
+
+# Example of sorted() function through length of string in reverse order
+# str1 = input("Enter your name: ")
+# print(f"Original String: '{str1}'")
+# len_str = sorted(str1.split(), key=len, reverse=True)
+# print(f"Sorted Characters by length: {len_str}")
