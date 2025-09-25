@@ -2,6 +2,9 @@
 # A string is a sequence of characters enclosed within single quotes (' ') or double quotes (" ").
 # Strings are immutable, meaning once created, their content cannot be changed.
 
+# Is string changeable or immutable?
+# Strings are immutable, meaning once created, their content cannot be changed.
+
 # str() function: It converts other data types to string.
 # len() function: It returns the length of the string.
 # lower() method: It converts all characters in the string to lowercase.
