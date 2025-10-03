@@ -128,3 +128,5 @@ Fahrenheit to Celsius : ( Fahrenheit - 32) * 5/9
 Celsius to Fahrenheit : (Celsius * 5/9) + 32
 
 .get() : primarily associated with dictionaries and provides a safe way to retrieve values associated with a key.
+
+List Comprehension : new_list = [expression for item in iterable if condition]
