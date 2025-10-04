@@ -26,10 +26,3 @@
 # print(d)  # Output: ('Romil', 'Abhijit', 'Dhruv', 'Dharmishta')
 # print(type(d))  # Output: <class 'tuple'>
 # print(f"{d.count('Romil')} is present at index {d.index('Romil')} in the tuple.")
-
-# List Comprehension
-# lst1 = [1, 23, 45, 67, 89]
-# lst2 = [i for i in lst1]
-# print(lst2)  # Output: [1, 23, 45, 67, 89]
-# lst3 = [i**2 for i in lst1]
-# print(lst3)  # Output: [1, 529, 2025, 4489, 7921]

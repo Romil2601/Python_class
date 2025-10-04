@@ -153,3 +153,41 @@
 #             count += 1
 #     vowel_count.append(count)
 # print(f"Number of vowels in each string: {vowel_count}")
+
+# List Comprehension
+# lst1 = [1, 23, 45, 67, 89]
+# lst2 = [i for i in lst1]
+# print(lst2)  # Output: [1, 23, 45, 67, 89]
+# lst3 = [i**2 for i in lst1]
+# print(lst3)  # Output: [1, 529, 2025, 4489, 7921]
+
+# String to uppercase using list comprehension
+# names = ['Romil', 'Abhijit', 'Dhruv', 'Dharmishta']
+# upper_names = [name.upper() for name in names if len(name) > 4]
+# print(upper_names)  # Output: ['ABHIJIT', 'DHARMISHTA']
+
+# Square of even numbers from the list using list comprehension
+# lst = [23, 56, 78, 22, 45, 88, 12]
+# squared_lst = [i**2 for i in lst if i % 2 == 0]
+# print(squared_lst)  # Output: [3136, 484, 7744, 144]
+
+# Create a new tuple with even numbers and their squares using list comprehension
+# lst = [23, 56, 78, 22, 45, 88, 12]
+# new_tuple = tuple((i, i**2) for i in lst if i % 2 == 0)
+# print(new_tuple)  # Output: ((56, 3136), (78, 6084), (22, 484), (88, 7744), (12, 144))
+
+# Create a new tuple with even numbers, their squares and cubes using list comprehension
+# lst = [23, 56, 78, 22, 45, 88, 12]
+# new_tuple = tuple((i, i**2, i**3) for i in lst if i % 2 == 0)
+# print(new_tuple)  # Output: ((56, 3136, 175616), (78, 6084, 456533), (22, 484, 10648), (88, 7744, 681472), (12, 144, 1728))
+
+# Create a new tuple with even numbers, their squares and cubes but sum of the middle values is in new variable
+lst = [23, 56, 78, 22, 45, 88, 12]
+sum = 0
+for i in lst:
+    if i % 2 == 0:
+        square = i**2
+        cube = i**3
+        sum += square
+        print((i, square, cube))
+print(f"Sum of squares is: {sum}")
