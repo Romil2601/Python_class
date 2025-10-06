@@ -266,3 +266,35 @@ for num in range(start, end + 1):
                 divisor += i
         if divisor == num:
             print(num, end=" ")
+            
+            
+# Write a program to remove all items from a list that are less then 5.
+num = [2, 3, 5, 6, 8, 1, 4, 9, 7]
+num = [i for i in num if i >= 5]
+print(num)  # Output: [5, 6, 8, 9, 7]
+
+# Write a program to find common among 2 lists.
+lst1 = [1, 2, 3, 4, 5]
+lst2 = [4, 5, 6, 7, 8]
+common = [i for i in lst1 if i in lst2]
+print("Common elements:", common)
+
+# Write a program to sort a list of strings by their length
+str_list = ["apple", "banana", "cherry", "date"]
+str_list.sort(key=len)
+print("Sorted by length:", str_list)
+
+# Write a program to accepts a list of integers and returns a tuple with the sum of all positive numbers and the sum of all negative numbers
+num = [10, -5, 3, -1, 7, -2]
+sum_positive = sum(i for i in num if i > 0)
+sum_negative = sum(i for i in num if i < 0)
+print("Tuple of sums:", (sum_positive, sum_negative))
+
+# Write a program that takes a list of numbers and returns a tuple containing the sum and product of all the numbers.
+num = [1, 2, 3, 4, 5, 6]
+total = sum(num)
+product = 1
+for i in num:
+    product *= i
+print("Sum:", total)
+print("Product:", product)
