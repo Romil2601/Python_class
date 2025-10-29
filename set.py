@@ -47,19 +47,19 @@
 # print(set_a.issuperset(set_b))  # Output: False
 
 # Example 3: but using operators
-# set_a = {1, 2, 3, 4, 5}
-# set_b = {4, 5, 6, 7, 8}
-# # Union1
-# print(set_a | set_b)  # Output: {1, 2, 3, 4, 5, 6, 7, 8}
-# # Intersection
-# print(set_a & set_b)  # Output: {4, 5}
-# # Difference
-# print(set_a - set_b)  # Output: {1, 2, 3}
-# # Symmetric Difference
-# print(set_a ^ set_b)  # Output: {1, 2, 3, 6, 7, 8}
-# # Is Disjoint
-# print(set_a.isdisjoint(set_b))  # Output: False
-# # Is Subset
-# print(set_a.issubset(set_b))  # Output: False
-# # Is Superset
-# print(set_a.issuperset(set_b))  # Output: False
+set_a = {1, 2, 3, 4, 5}
+set_b = {4, 5, 6, 7, 8}
+# Union1
+print(set_a | set_b)  # Output: {1, 2, 3, 4, 5, 6, 7, 8}
+# Intersection
+print(set_a & set_b)  # Output: {4, 5}
+# Difference
+print(set_a - set_b)  # Output: {1, 2, 3}
+# Symmetric Difference
+print(set_a ^ set_b)  # Output: {1, 2, 3, 6, 7, 8}
+# Is Disjoint
+print(set_a.isdisjoint(set_b))  # Output: False
+# Is Subset
+print(set_a.issubset(set_b))  # Output: False
+# Is Superset
+print(set_a.issuperset(set_b))  # Output: False

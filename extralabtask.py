@@ -50,8 +50,9 @@ print(f"Temperature in Fahrenheit is: {Fah}")
 
 # Print Multiplication table of given number
 num = int(input("Enter a number to print its multiplication table: "))
-for i in range(1, 11):
-    print(f"{num} x {i} = {num * i}")
+for i in range(1, num + 1):
+    multiply = num * i
+    print(f"{num} * {i} = {multiply}")
 
 # Print Number of days for given month name
 month = input("Enter month name: ").lower()
@@ -203,7 +204,7 @@ sum_of_cubes = 0
 temp = num
 while temp > 0:
     digit = temp % 10
-    sum_of_cubes += digit ** 3
+    sum_of_cubes += digit ** 3 # sum_of_cubes = sum_of_cubes + digit ** 3
     temp //= 10
 if sum_of_cubes == num:
     print(f"{num} is an Armstrong number.")
@@ -298,3 +299,69 @@ for i in num:
     product *= i
 print("Sum:", total)
 print("Product:", product)
+
+# Count frequency of list items and write in into dictionary :input List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
+List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
+freq = {}
+for i in List1:
+    if i in freq:
+        freq[i] += 1   
+    else:
+        freq[i] = 1    
+print(freq)
+
+# Accept a string from the user and print it in uppercase if the length of the string is greater than 5, else print it in lowercase using a function.
+name = input("Enter Your Name: ")
+if len(name) > 5:
+    print(name.upper())
+else:
+    print(name.lower())
+    
+# Write a function that accepts a string and returns the string in alternating uppercase and lowercase characters.
+msg = input("Enter the sentence")
+for i in range(len(msg)):
+    if i % 2 == 0:
+        result += msg[i].upper()
+    else:
+        result += msg[i].lower()
+print(result)
+
+# Write a function that accepts a list of numbers and returns the average of the numbers, excluding any zero values.
+nums_input = input("Enter the list of numbers: ")
+nums = []
+for val in nums_input.split():
+    nums.append(int(val))
+num1 = [i for i in nums if i != 0]
+if len(num1) == 0:
+    average = 0
+else:
+    average = sum(num1) / len(num1)
+print("Average (excluding zeros):", average)
+
+# Write a function that accepts a string and returns True if the string is a valid email address (contains "@" and "."), otherwise False.
+email = input("Enter Valid Email: ")
+if email == '@' and email == '.' in email:
+    print("It is a valid email.")
+else:
+    print("It is not a valid email.")
+    
+# Write a function that accepts a list of integers and returns the second largest number in the list.
+num1 = input("Enter the list of numbers: ")
+num_lst = []
+for v in num1.split():
+    num_lst.append(int(v))
+num_lst.sort()
+print(f"The Second Largest Number is {num_lst[-2]}")
+
+# Convert keys in upper case and put it in value
+city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
+for k in city_names.keys():
+    v = k.upper()
+print(city_names)
+
+# Find the length of keys and put in value
+city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
+for k in city_names.keys():
+    v = len(k)
+    city_names[k] = v
+print(city_names)

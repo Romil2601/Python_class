@@ -12,6 +12,9 @@ upper()
 lower()
 startswith()
 extend()
+min()
+max()
+sum()
 
 
 functions - name , parameter ,return type
@@ -130,3 +133,8 @@ Celsius to Fahrenheit : (Celsius * 5/9) + 32
 .get() : primarily associated with dictionaries and provides a safe way to retrieve values associated with a key.
 
 List Comprehension : new_list = [expression for item in iterable if condition]
+
+User defined : Creating your own function using def Keyword. Also have parameter and return.
+Example: 
+		def function_name:
+			statement

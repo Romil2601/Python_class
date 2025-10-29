@@ -182,12 +182,12 @@
 # print(new_tuple)  # Output: ((56, 3136, 175616), (78, 6084, 456533), (22, 484, 10648), (88, 7744, 681472), (12, 144, 1728))
 
 # Create a new tuple with even numbers, their squares and cubes but sum of the middle values is in new variable
-lst = [23, 56, 78, 22, 45, 88, 12]
-sum = 0
-for i in lst:
-    if i % 2 == 0:
-        square = i**2
-        cube = i**3
-        sum += square
-        print((i, square, cube))
-print(f"Sum of squares is: {sum}")
+# lst = [23, 56, 78, 22, 45, 88, 12]
+# sum = 0
+# for i in lst:
+#     if i % 2 == 0:
+#         square = i**2
+#         cube = i**3
+#         sum += square
+#         print((i, square, cube))
+# print(f"Sum of squares is: {sum}")
