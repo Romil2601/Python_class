@@ -142,3 +142,11 @@ Example:
 Types of Function : 1. Default Argument
 					2. Keyword Argument
 					3. Variable Argument
+
+zip() - combines multiple iterables (like lists or tuples) into a single iterable of tuples, 
+where each tuple contains one element from each of the input iterables based on their corresponding positions.
+ example :- 
+ 	list1 = [1, 2, 3]
+ 	list2 = ['a', 'b', 'c']
+ 	zipped = zip(list1, list2)
+ 	print(list(zipped))  # Output: [(1, 'a'), (2, 'b'), (3, 'c')]
