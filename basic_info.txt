@@ -138,3 +138,7 @@ User defined : Creating your own function using def Keyword. Also have parameter
 Example: 
 		def function_name:
 			statement
+
+Types of Function : 1. Default Argument
+					2. Keyword Argument
+					3. Variable Argument
