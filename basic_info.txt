@@ -139,9 +139,9 @@ Example:
 		def function_name:
 			statement
 
-Types of Function : 1. Default Argument
-					2. Keyword Argument
-					3. Variable Argument
+Types of Function : 1. Default Argument (arg=value)
+					2. Keyword Argument (**kwargs)
+					3. Variable Argument (*args)
 
 zip() - combines multiple iterables (like lists or tuples) into a single iterable of tuples, 
 where each tuple contains one element from each of the input iterables based on their corresponding positions.
@@ -150,3 +150,7 @@ where each tuple contains one element from each of the input iterables based on 
  	list2 = ['a', 'b', 'c']
  	zipped = zip(list1, list2)
  	print(list(zipped))  # Output: [(1, 'a'), (2, 'b'), (3, 'c')]
+
+Module - A module is a file containing Python code that defines functions, classes, and variables. 
+			It allows you to organize your code into separate files for better modularity and reusability.
+			To use a module, you can import it using the import statement.

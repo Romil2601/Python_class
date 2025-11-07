@@ -11,6 +11,7 @@
 
 # *args - Allows a function to accept any number of positional arguments as a tuple.
 # **kwargs - Allows a function to accept any number of keyword arguments as a dictionary.
+# map() - A built-in function that applies a given function to all items in an iterable (like a list) and returns a map object (which is an iterator).
 
 # Function declaration using def keyword.
 # def greet():
@@ -145,3 +146,13 @@
 # print(addition (12,23))
 # print(addition (23,657,"abhs",5656))
 # print(addition (23,345,5656,6789))
+
+def square(num):
+    return num * num
+lst = [1,2,3]
+anslst = []
+# for val in lst:
+#     anslst.append(square(val))
+# print(anslst)
+anslst = map(square, lst)
+print(list(anslst))

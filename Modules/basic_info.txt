@@ -1,0 +1,53 @@
+What is Module?
+A module is a file containing Python code. It can define functions, classes, and variables that can be reused in other Python programs.
+Modules help organize code into manageable sections and promote code reusability.
+Python has a rich ecosystem of built-in modules and also allows you to create your own custom modules.
+
+How to Create a Module?
+To create a module, simply create a new Python file with a .py extension.
+For example, you can create a file named my_module.py and add the following code:
+# my_module.py
+def greet(name):
+    return f"Hello, {name}!"
+
+def add(a, b):
+    return a + b
+
+How to Use a Module?
+To use a module in your Python program, you can use the import statement.
+For example, to use the greet function from the my_module.py file, you can do the following:
+# main.py
+import my_module
+
+print(my_module.greet("Alice"))
+This will output: Hello, Alice!
+
+How to import all names from a module?
+You can use the from ... import * syntax to import all names from a module.
+# main.py
+from my_module import *
+print(greet("Bob"))
+This will output: Hello, Bob!   
+
+What is global variable in module?
+A global variable in a module is a variable that is defined at the top level of the module 
+and can be accessed from any function within that module.
+For example:
+# my_module.py
+number = 42
+def printNumber():
+    global number
+    number = 30
+    print(number)
+
+# main.py
+import my_module
+number = 10
+print(number)          # Outputs: 10
+my_module.printNumber()  # Outputs: 30
+print(my_module.number)   # Outputs: 30
+
+Types of Modules in Python:
+1. Built-in Modules: These are modules that come pre-installed with Python, such as math, os, sys, etc.
+2. User-defined Modules: These are modules that you create yourself to organize your code.
+3. Third-party Modules: These are modules created by the Python community that can be installed using package managers like pip, such as NumPy, Pandas, Requests, etc.

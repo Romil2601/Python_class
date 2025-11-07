@@ -91,85 +91,85 @@
 #         print(f"{k} is the {v["product"]} has unit sold over 100")
 
 # Car dictionary with filteration.
-car_dict = {
-"EV" : 
-    {"Maruti" :
-       { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
-         "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
-         "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
-    },
-    "Hyundai" :
-       { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
-         "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
-         "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
-    },
-    "Kia" :
-       { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
-        "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
-},
-"Petrol" : 
-    {"Maruti" :
-       { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
-         "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
-         "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
-    },
-    "Hyundai" :
-       { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
-         "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
-         "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
-    },
-    "Kia" :
-       { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
-        "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
-},
-"Disel" : 
-    {"Maruti" :
-       { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
-         "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
-         "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
-    },
-    "Hyundai" :
-       { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
-         "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
-         "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
-    },
-    "Kia" :
-       { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
-        "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
-}}
-choice = input("Enter the type of car (EV/Petrol/Disel) or specific Brand or put specific Model or 'all' to see all: ")
-match choice:
-   case 'EV' | 'Petrol' | 'Disel':
-       for brand, models in car_dict[choice].items():
-           print(f"\nBrand: {brand}")
-           for model, details in models.items():
-               price = details['Price']
-               model_type = details['Model']
-               print(f" Model: {model}, Price: {price}, Type: {model_type}")
-   case 'Maruti' | 'Hyundai' | 'Kia':
-         for car_type, brands in car_dict.items():
-            if choice in brands:
-                  print(f"\nCar Type: {car_type}")
-                  print(f" Brand: {choice}")
-                  for model, details in brands[choice].items():
-                     price = details['Price']
-                     model_type = details['Model']
-                     print(f"  Model: {model}, Price: {price}, Type: {model_type}")
-   case 'Smart Hybrid' | 'VX Hybrid' | 'Hybrid' | 'Plug-in Hybrid' | 'SEL Hybrid' | 'IONIQ Hybrid' | 'EV6' | 'EV9':
-       for car_type, brands in car_dict.items():
-           for brand, models in brands.items():
-               for model, details in models.items():
-                   if details['Model'] == choice:
-                       price = details['Price']
-                       print(f"\nCar Type: {car_type}")
-                       print(f" Brand: {brand}")
-                       print(f"  Model: {model}, Price: {price}, Type: {choice}")
-   case 'all':
-       for car_type, brands in car_dict.items():
-           print(f"\nCar Type: {car_type}")
-           for brand, models in brands.items():
-               print(f" Brand: {brand}")
-               for model, details in models.items():
-                   price = details['Price']
-                   model_type = details['Model']
-                   print(f"  Model: {model}, Price: {price}, Type: {model_type}")
+# car_dict = {
+# "EV" : 
+#     {"Maruti" :
+#        { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
+#          "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
+#          "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
+#     },
+#     "Hyundai" :
+#        { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
+#          "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
+#          "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
+#     },
+#     "Kia" :
+#        { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
+#         "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
+# },
+# "Petrol" : 
+#     {"Maruti" :
+#        { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
+#          "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
+#          "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
+#     },
+#     "Hyundai" :
+#        { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
+#          "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
+#          "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
+#     },
+#     "Kia" :
+#        { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
+#         "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
+# },
+# "Disel" : 
+#     {"Maruti" :
+#        { "Baleno": {"Price" : 600000, "Model" : "Smart Hybrid"},
+#          "sCross": {"Price" : 1300000, "Model" : "VX Hybrid"},
+#          "Swift":  {"Price" : 579000, "Model" : "Hybrid"}
+#     },
+#     "Hyundai" :
+#        { "Tucsun" : {"Price" : 2732000, "Model" : "Plug-in Hybrid"},
+#          "Sonata" : {"Price" : 2000000, "Model" : "SEL Hybrid"},
+#          "IONIQ 6" : {"Price" : 6500000, "Model" : "IONIQ Hybrid"}
+#     },
+#     "Kia" :
+#        { "Niro" : {"Price" : 1500000, "Model" : "EV6"},
+#         "Sorento" : {"Price" : 2500000, "Model" : "EV9"}}
+# }}
+# choice = input("Enter the type of car (EV/Petrol/Disel) or specific Brand or put specific Model or 'all' to see all: ")
+# match choice:
+#    case 'EV' | 'Petrol' | 'Disel':
+#        for brand, models in car_dict[choice].items():
+#            print(f"\nBrand: {brand}")
+#            for model, details in models.items():
+#                price = details['Price']
+#                model_type = details['Model']
+#                print(f" Model: {model}, Price: {price}, Type: {model_type}")
+#    case 'Maruti' | 'Hyundai' | 'Kia':
+#          for car_type, brands in car_dict.items():
+#             if choice in brands:
+#                   print(f"\nCar Type: {car_type}")
+#                   print(f" Brand: {choice}")
+#                   for model, details in brands[choice].items():
+#                      price = details['Price']
+#                      model_type = details['Model']
+#                      print(f"  Model: {model}, Price: {price}, Type: {model_type}")
+#    case 'Smart Hybrid' | 'VX Hybrid' | 'Hybrid' | 'Plug-in Hybrid' | 'SEL Hybrid' | 'IONIQ Hybrid' | 'EV6' | 'EV9':
+#        for car_type, brands in car_dict.items():
+#            for brand, models in brands.items():
+#                for model, details in models.items():
+#                    if details['Model'] == choice:
+#                        price = details['Price']
+#                        print(f"\nCar Type: {car_type}")
+#                        print(f" Brand: {brand}")
+#                        print(f"  Model: {model}, Price: {price}, Type: {choice}")
+#    case 'all':
+#        for car_type, brands in car_dict.items():
+#            print(f"\nCar Type: {car_type}")
+#            for brand, models in brands.items():
+#                print(f" Brand: {brand}")
+#                for model, details in models.items():
+#                    price = details['Price']
+#                    model_type = details['Model']
+#                    print(f"  Model: {model}, Price: {price}, Type: {model_type}")

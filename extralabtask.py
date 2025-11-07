@@ -1,3 +1,8 @@
+
+
+# -------- Extra Lab Tasks ---------
+
+
 # Find area of circle using PI
 pi = 3.14
 r = float(input("Enter radius of circle: "))
@@ -185,19 +190,6 @@ for i in range(2, num):
 if temp == 0:
     print(f"{num} is a prime number")
 
-# Print list of prime numbers between given range
-start = int(input("Enter start of range: "))
-end = int(input("Enter end of range: "))
-print(f"Prime numbers between {start} and {end} are:")
-for num in range(start, end + 1):
-    temp = 0
-    for i in range(2, num):
-        if num % i == 0:
-            temp = 1
-            break
-    if temp == 0 and num > 1:
-        print(num, end=" ")
-
 # Check whether the given number is armstrong or not
 num = int(input("Enter a number to check if it's Armstrong: "))
 sum_of_cubes = 0
@@ -267,8 +259,292 @@ for num in range(start, end + 1):
                 divisor += i
         if divisor == num:
             print(num, end=" ")
-            
-            
+
+# Accept a string from the user and print it in uppercase if the length of the string is greater than 5, else print it in lowercase using a function.
+name = input("Enter Your Name: ")
+if len(name) > 5:
+    print(name.upper())
+else:
+    print(name.lower())
+    
+    
+# -------- Functions based programs ---------
+
+    
+# Write a function that accepts a string and returns the string in alternating uppercase and lowercase characters.
+msg = input("Enter the sentence")
+def lower_upper(msg):
+    result = ""
+    for i in range(len (msg)):
+        if i % 2 == 0:
+            result += msg[i].upper()
+        else:
+            result += msg[i].lower()
+    return result
+print(lower_upper(msg))
+
+# Write a function that accepts a list of numbers and returns the average of the numbers, excluding any zero values.
+nums_input = input("Enter the list of numbers: ")
+nums = []
+def average(nums):
+    total = 0
+    count = 0
+    for num in nums:
+        if num != 0:
+            total += num
+            count += 1
+    return total / count if count > 0 else 0
+print("Average (excluding zeros):", average)
+
+# Write a function that accepts a string and returns True if the string is a valid email address (contains "@" and "."), otherwise False.
+email = input("Enter Valid Email: ")
+def valid_email(email):
+    if "@" in email and "." in email:
+        return True
+    else:
+        return False
+print(valid_email(email))
+    
+# Write a function that accepts a list of integers and returns the second largest number in the list.
+num1 = input("Enter the list of numbers: ")
+num_lst = []
+def second_largest(num_lst):
+    num_lst = list(set(num_lst))
+    num_lst.sort()
+    return num_lst[-2] if len(num_lst) >= 2 else None
+
+print(f"The Second Largest Number is {second_largest(num_lst)}")
+
+# Write a function that accepts a list of numbers and returns a new list with only the numbers that are divisible by 3.
+def divisible(num):
+   for i in num :
+       if i % 3 == 0:
+           print(i)
+num = input("Enter the list of numbers: ")
+new_lst = list(map(int, num.split(",")))
+divisible(new_lst)
+
+# Write a function that accepts a list of numbers and returns a new list with the squares of all the numbers in the list.
+def square(num):
+    for i in num:
+        print(i * i)
+num = input("Enter the list of numbers: ")
+new_lst = list(map(int, num.split(",")))
+square(new_lst)
+
+# Write a function that accepts a string and counts how many vowels are in the string.
+def count_vowels(s):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+string = input("Enter a string: ")
+print("Number of vowels:", count_vowels(string))
+
+# Write a function that accepts a list of strings and returns the longest string in the list.
+def longest_string(str_lst):
+    longest = ""
+    for s in str_lst:
+        if len(s) > len(longest):
+            longest = s
+    return longest
+str_input = input("Enter the list of strings: ")
+str_lst = str_input.split(",")
+print("Longest string:", longest_string(str_lst))
+
+# Write a function that accepts a number and checks if it is an Armstrong number.
+def armstrong(num):
+    sum_of_cubes = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum_of_cubes += digit ** 3
+        temp //= 10
+    return sum_of_cubes == num
+number = int(input("Enter a number: "))
+if armstrong(number):
+    print(f"{number} is an Armstrong number.")
+
+# Write a function that accepts a number and returns the sum of its digits.
+def sum_of_digits(n):
+    total = 0
+    while n > 0:
+        digit = n % 10
+        total += digit
+        n //= 10
+    return total
+num = int(input("Enter a number: "))
+print("Sum of digits:", sum_of_digits(num))
+
+# Write a function that accepts a list of strings and returns a new list with only the strings that have an odd length.
+def odd(str_lst):
+    result = []
+    for s in str_lst:
+        if len(s) % 2 != 0:
+            result.append(s)
+    return result
+str_input = input("Enter the list of strings: ")
+str_lst = str_input.split(",")
+print("Strings with odd length:", odd(str_lst))
+
+# Write a function that accepts a string and a substring, and returns True if the substring is found in the string, otherwise False.
+def substring(s, sub):
+    if sub in s:
+        return True
+    else:
+        return False
+string = input("Enter a string: ")
+sub_string = input("Enter a substring: ")
+print(substring(string, sub_string))
+
+# Write a function that accepts a list of numbers and returns a new list with all the numbers that are divisible by both 2 and 3.
+def divisible(num):
+    for i in num:
+        if i % 2 == 0 and i % 3 == 0:
+            print(i)
+num = input("Enter the list of numbers: ")
+new_lst = list(map(int, num.split(",")))
+divisible(new_lst)
+
+# Write a function that accepts two strings and returns the common characters between them.
+def common(str1, str2):
+    common_chars = set(str1) & set(str2)
+    return ''.join(common_chars)
+string1 = input("Enter first string: ")
+string2 = input("Enter second string: ")
+print("Common characters:", common(string1, string2))
+
+# Write a function count_character(string, char) that accepts a string and a character, and returns the number of times the character appears in the string.
+def count(string, char):
+    count = 0
+    for c in string:
+        if c == char:
+            count += 1
+    return count
+string = input("Enter a string: ")
+char = input("Enter a character to count: ")
+print(f"Character '{char}' appears {count(string, char)} times in the string.")
+
+# Write a function concatenate_with_separator(lst, separator) that accepts a list of strings and a separator string, then returns a new string where all elements of the list are joined using the separator.
+def concatenate(lst, separator):
+    return separator.join(lst)
+str_input = input("Enter the list of strings: ")
+str_lst = str_input.split(",")
+sep = input("Enter a separator: ")
+print("Concatenated string:", concatenate(str_lst, sep))
+
+# Write a function merge_dicts(dict1, dict2) that accepts two dictionaries and returns a single dictionary that contains the merged key-value pairs from both dictionaries.
+def merge(dict1, dict2):
+    merged = dict1.copy()
+    merged.update(dict2)
+    return merged
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+print("Merged dictionary:", merge(dict1, dict2))
+
+# Write a function longest_word(sentence) that accepts a sentence and returns the longest word in the sentence.
+def longest_word(sentence):
+    words = sentence.split()
+    longest = ""
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+    return longest
+sentence = input("Enter a sentence: ")
+print("Longest word:", longest_word(sentence))
+
+# Write a function create_frequency_dict(lst) that accepts a list and returns a dictionary where the keys are the elements of the list, and the values are the count of how often each element appears.
+def create_frequency_dict(lst):
+    freq = {}
+    for item in lst:
+        if item in freq:
+            freq[item] += 1
+        else:
+            freq[item] = 1
+    return freq
+lst_input = input("Enter the list of items: ")
+lst = lst_input.split(",")
+print("Frequency dictionary:", create_frequency_dict(lst))
+
+# Write a function merge_lists_into_dict(list1, list2) that accepts two lists of equal length and merges them into a dictionary where the keys are the indices (0 to n-1) and the values are the elements from both lists.
+def merge_lists_into_dict(list1, list2):
+    merged_dict = {}
+    for i in range(len(list1)):
+        merged_dict[i] = (list1[i], list2[i])
+    return merged_dict
+list1 = ['key1', 'key2', 'key3']
+list2 = ['value1', 'value2', 'value3']
+print("Merged dictionary from lists:", merge_lists_into_dict(list1, list2))
+
+
+# -------- Dictionary based programs ---------
+
+
+# Count frequency of list items and write in into dictionary :input List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
+List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
+freq = {}
+for i in List1:
+    if i in freq:
+        freq[i] += 1   
+    else:
+        freq[i] = 1    
+print(freq)
+
+# Convert keys in upper case and put it in value
+city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
+for k in city_names.keys():
+    v = k.upper()
+print(city_names)
+
+# Find the length of keys and put in value
+city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
+for k in city_names.keys():
+    v = len(k)
+    city_names[k] = v
+print(city_names)
+
+
+# -------- Map Function based programs ---------
+
+
+# Write a Python program that uses `map()` to convert a list of strings to uppercase. Input: `['apple', 'banana', 'cherry']` - Output: `['APPLE', 'BANANA', 'CHERRY']`
+fruits = ['apple', 'banana', 'cherry']
+upper_fruits = list(map(str.upper, fruits))
+print(upper_fruits)
+
+# Write a Python program that uses `map()` to apply a function that converts a list of temperature values in Celsius to Fahrenheit. Input: `[0, 25, 100]` Output: `[32.0, 77.0, 212.0]`
+celsius = [0, 25, 100]
+def c_to_f(c):
+    formula = (c * 9/5) + 32
+    return formula
+fahrenheit = list(map(c_to_f, celsius))
+print(fahrenheit)
+
+
+# -------- Tuple based programs ---------
+
+
+# Write a program to accepts a list of integers and returns a tuple with the sum of all positive numbers and the sum of all negative numbers
+num = [10, -5, 3, -1, 7, -2]
+sum_positive = sum(i for i in num if i > 0)
+sum_negative = sum(i for i in num if i < 0)
+print("Tuple of sums:", tuple((sum_positive, sum_negative)))
+
+# Write a program that takes a list of numbers and returns a tuple containing the sum and product of all the numbers.
+num = [1, 2, 3, 4, 5, 6]
+total = tuple(sum(num))
+product = 1
+for i in num:
+    product *= i
+print("Sum:", total)
+print("Product:", tuple(product))
+
+
+# -------- List based programs ---------
+
+
 # Write a program to remove all items from a list that are less then 5.
 num = [2, 3, 5, 6, 8, 1, 4, 9, 7]
 num = [i for i in num if i >= 5]
@@ -285,83 +561,15 @@ str_list = ["apple", "banana", "cherry", "date"]
 str_list.sort(key=len)
 print("Sorted by length:", str_list)
 
-# Write a program to accepts a list of integers and returns a tuple with the sum of all positive numbers and the sum of all negative numbers
-num = [10, -5, 3, -1, 7, -2]
-sum_positive = sum(i for i in num if i > 0)
-sum_negative = sum(i for i in num if i < 0)
-print("Tuple of sums:", (sum_positive, sum_negative))
-
-# Write a program that takes a list of numbers and returns a tuple containing the sum and product of all the numbers.
-num = [1, 2, 3, 4, 5, 6]
-total = sum(num)
-product = 1
-for i in num:
-    product *= i
-print("Sum:", total)
-print("Product:", product)
-
-# Count frequency of list items and write in into dictionary :input List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
-List1 = [1, 2, 2, 3, 4, 1, 4, 5, 5, 6, 7, 7]
-freq = {}
-for i in List1:
-    if i in freq:
-        freq[i] += 1   
-    else:
-        freq[i] = 1    
-print(freq)
-
-# Accept a string from the user and print it in uppercase if the length of the string is greater than 5, else print it in lowercase using a function.
-name = input("Enter Your Name: ")
-if len(name) > 5:
-    print(name.upper())
-else:
-    print(name.lower())
-    
-# Write a function that accepts a string and returns the string in alternating uppercase and lowercase characters.
-msg = input("Enter the sentence")
-for i in range(len(msg)):
-    if i % 2 == 0:
-        result += msg[i].upper()
-    else:
-        result += msg[i].lower()
-print(result)
-
-# Write a function that accepts a list of numbers and returns the average of the numbers, excluding any zero values.
-nums_input = input("Enter the list of numbers: ")
-nums = []
-for val in nums_input.split():
-    nums.append(int(val))
-num1 = [i for i in nums if i != 0]
-if len(num1) == 0:
-    average = 0
-else:
-    average = sum(num1) / len(num1)
-print("Average (excluding zeros):", average)
-
-# Write a function that accepts a string and returns True if the string is a valid email address (contains "@" and "."), otherwise False.
-email = input("Enter Valid Email: ")
-if email == '@' and email == '.' in email:
-    print("It is a valid email.")
-else:
-    print("It is not a valid email.")
-    
-# Write a function that accepts a list of integers and returns the second largest number in the list.
-num1 = input("Enter the list of numbers: ")
-num_lst = []
-for v in num1.split():
-    num_lst.append(int(v))
-num_lst.sort()
-print(f"The Second Largest Number is {num_lst[-2]}")
-
-# Convert keys in upper case and put it in value
-city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
-for k in city_names.keys():
-    v = k.upper()
-print(city_names)
-
-# Find the length of keys and put in value
-city_names = {'ahmedabad' : "" , 'baroda': "" , 'surat' : ""}
-for k in city_names.keys():
-    v = len(k)
-    city_names[k] = v
-print(city_names)
+# Print list of prime numbers between given range
+start = int(input("Enter start of range: "))
+end = int(input("Enter end of range: "))
+print(f"Prime numbers between {start} and {end} are:")
+for num in range(start, end + 1):
+    temp = 0
+    for i in range(2, num):
+        if num % i == 0:
+            temp = 1
+            break
+    if temp == 0 and num > 1:
+        print(num, end=" ")
