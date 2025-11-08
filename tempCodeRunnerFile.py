@@ -1,6 +1,6 @@
-def concatenate(lst, separator):
-    return separator.join(lst)
-str_input = input("Enter the list of strings: ")
-str_lst = str_input.split(",")
-sep = input("Enter a separator: ")
-print("Concatenated string:", concatenate(str_lst, sep))
+def add(i):
+    return i + j
+lst = [1, 2, 3, 4]
+j = int(input("Enter the number you want to add to all : "))
+ans = list(map(add, lst))
+print(ans)

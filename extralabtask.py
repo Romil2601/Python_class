@@ -522,6 +522,40 @@ def c_to_f(c):
 fahrenheit = list(map(c_to_f, celsius))
 print(fahrenheit)
 
+# Write a Python program that uses the `map()` function to square each number in a given list of integers. Input: `[1, 2, 3, 4]` , Output: `[1, 4, 9, 16]`
+def square(i):
+    return i * i
+lst =[ 1, 2, 3, 4]
+ans = list(map(square,lst))
+print(ans)
+
+# Write a Python program that uses `map()` to convert a list of strings to uppercase. Input: `['apple', 'banana', 'cherry']` - Output: `['APPLE', 'BANANA', 'CHERRY']`
+lst = ['apple', 'banana', 'cherry']
+ans = list(map(str.upper,lst))
+print(ans)
+
+# Write a Python program that uses `map()` to find the length of each string in a list of strings. Input: `['hello', 'world', 'python']` Output: `[5, 5, 6]`
+def length(i):
+    return len(i)
+lst = ['Hello', 'World', 'Python']
+ans = list(map(length, lst))
+print(ans)
+
+# Write a Python program that uses `map()` to add a given number to each element in a list. - Input: `[1, 2, 3, 4]`, `5` Output: `[6, 7, 8, 9]`
+def add(i):
+    return i + j
+lst = [1, 2, 3, 4]
+j = int(input("Enter the number you want to add to all : "))
+ans = list(map(add, lst))
+print(ans)
+
+# Write a Python program that uses `map()` to apply a function that converts a list of temperature values in Celsius to Fahrenheit. Input: `[0, 25, 100]` Output: `[32.0, 77.0, 212.0]`
+def c_to_f(i):
+    return (i * 1.8) + 32
+celsius = [0, 25, 100]
+fahrenheit = list(map(c_to_f, celsius))
+print(fahrenheit)
+
 
 # -------- Tuple based programs ---------
 
