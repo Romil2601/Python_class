@@ -1,6 +1,6 @@
-def add(i):
-    return i + j
-lst = [1, 2, 3, 4]
-j = int(input("Enter the number you want to add to all : "))
-ans = list(map(add, lst))
-print(ans)
+import json
+data = {'Age': 24, 'Address': 'CG Road'}
+with open("file1.json" , "w") as file:
+    # data = json.load(file) # ----- Load Method
+    json.dump(data, file) # ----- Dump method
+    print(" Data entered successfully")
