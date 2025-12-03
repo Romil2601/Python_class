@@ -19,7 +19,7 @@
 # file = open('lambda.py', 'r')
 # content = file.read(50)  # Read first 50 characters
 # print(content)
-
+# file.close()
 # Example 2: Reading from a File which is other folder ||  \ is taken as a character, so for the path we use \\.
 # file = open('C:\\Users\\romil\\Downloads\\Practice 1.txt', 'r') 
 # content = file.read()
@@ -29,7 +29,7 @@
 # file = open('file_handling.py', 'r')
 # lines = file.readline() # readline reads only one line
 # print(lines)
-# -------------------------------------------
+# # -------------------------------------------
 # file = open('lambda.py', 'r')
 # lines = file.readlines() # readlines reads all lines and stores in list 
 # print(lines)
@@ -175,3 +175,4 @@
 # with open('file1.json' , 'r') as file:
 #     data = json.load(file) # ----- Load Method
 #     print(" Data entered successfully")
+#     print(data)
