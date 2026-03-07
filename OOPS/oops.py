@@ -293,7 +293,8 @@
 # # print(p1.__salary)    #private (will raise an AttributeError)
 # print(p1._person__salary)  #accessing private variable using name mangling
 
-#____________________________________________________________________________________>
+#------------------------------------------ Iterator ------------------------------------------
+
 # What is Iterator in python ?
 # An iterator in Python is an object that allows you to traverse through a collection (like a list, tuple, or dictionary) one element at a time, 
 # without exposing the underlying structure of the collection.

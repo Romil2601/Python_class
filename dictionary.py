@@ -70,15 +70,15 @@
 # print(result)
 
 # Find total income from sales who have sold over 100 items.
-sales = [ {"product": "Pen", "price": 10, "units_sold": 150},
-    {"product": "Notebook", "price": 50, "units_sold": 90},
-    {"product": "Pencil", "price": 5, "units_sold": 300}
-]
-total = 0 
-for i in sales:
-    if i['units_sold'] > 100:
-        total = i["units_sold"] * i["price"]
-        print(f" {i["product"]} has of total income of {total}")
+# sales = [ {"product": "Pen", "price": 10, "units_sold": 150},
+#     {"product": "Notebook", "price": 50, "units_sold": 90},
+#     {"product": "Pencil", "price": 5, "units_sold": 300}
+# ]
+# total = 0 
+# for i in sales:
+#     if i['units_sold'] > 100:
+#         total = i["units_sold"] * i["price"]
+#         print(f" {i["product"]} has of total income of {total}")
         
 # Fetch only products whose unit sold are more than 100.
 # sales = { 
